@@ -1,0 +1,19 @@
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: true  # if true: only post the comment if coverage changes
+  require_base: no        # [yes :: must have a base report to post]
+  require_head: yes       # [yes :: must have a head report to post]
+  branches: null
+
+coverage:
+  ignore:
+    - "third_party/.*"                # ignore folder and all its contents
+    - "*/test"                        # ignore all directories named test
+    - "*/**/test/*"                   # ignore all directories named test recursively
+    - "*/**/gtest/*"                  # ignore all directories named gtest recursively
+    - "**/cppmicroservices_init.cpp"  # ignore cppmicroservices_init.cpp files
+    - "compendium/test_bundles/**/*"  # ignore test_bundles and all its contents
+
+  fixes:
+    - "projects/cppmicroservices::"

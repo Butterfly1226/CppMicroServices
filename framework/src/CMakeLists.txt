@@ -1,0 +1,98 @@
+#-----------------------------------------------------------------------------
+# Source files
+#-----------------------------------------------------------------------------
+
+set(_srcs
+  util/Any.cpp
+  util/AnyMap.cpp
+  util/CFRLogger.cpp
+  util/Framework.cpp
+  util/FrameworkEvent.cpp
+  util/FrameworkFactory.cpp
+  util/FrameworkPrivate.cpp
+  util/LDAPExpr.cpp
+  util/LDAPFilter.cpp
+  util/LDAPProp.cpp
+  util/Properties.cpp
+  util/PropsCheck.cpp
+  util/SecurityException.cpp
+  util/SharedLibrary.cpp
+  util/SharedLibraryException.cpp
+  util/Utils.cpp
+  util/ServiceRegistrationLocks.cpp
+  util/ThreadpoolSafeFuture.cpp
+
+  service/ListenerToken.cpp
+  service/ServiceException.cpp
+  service/ServiceEvent.cpp
+  service/ServiceEventListenerHook.cpp
+  service/ServiceFindHook.cpp
+  service/ServiceHooks.cpp
+  service/ServiceListenerEntry.cpp
+  service/ServiceListenerHook.cpp
+  service/ServiceListeners.cpp
+  service/ServiceObjects.cpp
+  service/ServiceReferenceBase.cpp
+  service/ServiceReferenceBasePrivate.cpp
+  service/ServiceRegistrationBase.cpp
+  service/ServiceRegistrationBasePrivate.cpp
+  service/ServiceRegistrationCoreInfo.cpp
+  service/ServiceRegistry.cpp
+
+  bundle/Bundle.cpp
+  bundle/BundleArchive.cpp
+  bundle/BundleContext.cpp
+  bundle/BundleContextPrivate.cpp
+  bundle/BundleEvent.cpp
+  bundle/BundleEventHook.cpp
+  bundle/BundleFindHook.cpp
+  bundle/BundleHooks.cpp
+  bundle/BundleManifest.cpp
+  bundle/BundlePrivate.cpp
+  bundle/BundleRegistry.cpp
+  bundle/BundleResource.cpp
+  bundle/BundleResourceBuffer.cpp
+  bundle/BundleResourceContainer.cpp
+  bundle/BundleResourceStream.cpp
+  bundle/BundleStorageFile.cpp
+  bundle/BundleStorageMemory.cpp
+  bundle/BundleUtils.cpp
+  bundle/BundleVersion.cpp
+  bundle/Constants.cpp
+  bundle/CoreBundleContext.cpp
+  ../../third_party/miniz.c
+)
+
+set(_private_headers
+  util/FrameworkPrivate.h
+  util/CFRLogger.h
+  util/LDAPExpr.h
+  util/Properties.h
+  util/PropsCheck.h
+  util/Utils.h
+  util/ServiceRegistrationLocks.h
+
+  service/ServiceHooks.h
+  service/ServiceListenerEntry.h
+  service/ServiceListenerHookPrivate.h
+  service/ServiceListeners.h
+  service/ServiceReferenceBasePrivate.h
+  service/ServiceRegistrationBasePrivate.h
+  service/ServiceRegistrationCoreInfo.h
+  service/ServiceRegistry.h
+
+  bundle/BundleArchive.h
+  bundle/BundleContextPrivate.h
+  bundle/BundleEventInternal.h
+  bundle/BundleHooks.h
+  bundle/BundleManifest.h
+  bundle/BundlePrivate.h
+  bundle/BundleRegistry.h
+  bundle/BundleResourceContainer.h
+  bundle/BundleStorage.h
+  bundle/BundleStorageFile.h
+  bundle/BundleStorageMemory.h
+  bundle/BundleUtils.h
+  bundle/CoreBundleContext.h
+  bundle/Resolver.h
+)
